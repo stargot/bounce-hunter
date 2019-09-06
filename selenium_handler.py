@@ -12,7 +12,7 @@ password_field = driver.find_element_by_id("vb_login_password")
 submit_form = driver.find_element_by_xpath("//input[@type='submit']")
 sleep(2)
 
-user_field.send_keys(settings.AUTH_LOGIN)
+login_field.send_keys(settings.AUTH_LOGIN)
 password_field.send_keys(settings.AUTH_PASSWORD)
 submit_form.submit()
 sleep(2)
